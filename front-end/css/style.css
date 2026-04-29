@@ -1,21 +1,24 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
-
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+
+    min-height: 100vh;
+    padding: 20px;
 }
 
+/* container principal */
 .login {
     background: white;
     padding: 30px;
     border-radius: 10px;
-    width: 260px;
-    text-align: center;
 
+    width: 100%;
+    max-width: 350px;
+
+    margin: 50px auto; /* centralização segura */
+
+    text-align: center;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
@@ -93,6 +96,8 @@ body {
 .google-btn:hover {
     background: #f1f1f1;
 }
+
+/* link extra (ex: voltar pro login) */
 .link-login {
     margin-top: 15px;
     font-size: 14px;
@@ -105,4 +110,22 @@ body {
 
 .link-login a:hover {
     text-decoration: underline;
+}
+
+/* 📱 RESPONSIVIDADE */
+@media (max-width: 500px) {
+    body {
+        padding: 10px;
+    }
+
+    .login {
+        margin: 40px auto;
+        padding: 20px;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
 }
