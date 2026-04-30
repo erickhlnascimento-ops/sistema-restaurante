@@ -1,0 +1,159 @@
+/* ===== IMPORTAÇÃO DE FONTES ===== */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===== VARIÁVEIS DE CORES ===== */
+:root {
+    --burgundy-dark: #6B0F1A;
+    --burgundy: #8B1E2D;
+    --gold: #C9A14A;
+    --beige: #F5F1EB;
+    --white: #FFFFFF;
+    --gray-text: #555555;
+    --border-color: #E5E0D8;
+}
+
+/* ===== RESET E BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--beige);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+/* ===== CONTAINER DE CADASTRO ===== */
+.login {
+    background-color: var(--white);
+    padding: 3rem 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(107, 15, 26, 0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+/* ===== TÍTULO ===== */
+.login h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: var(--burgundy-dark);
+    margin-bottom: 1.75rem;
+    position: relative;
+}
+
+.login h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--gold), var(--burgundy));
+    margin: 0.75rem auto 0;
+    border-radius: 2px;
+}
+
+/* ===== FORMULÁRIO ===== */
+.login form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* ===== CAMPOS DE INPUT ===== */
+.login input[type="text"],
+.login input[type="email"],
+.login input[type="tel"],
+.login input[type="password"] {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    color: var(--gray-text);
+    background-color: var(--beige);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.login input:focus {
+    border-color: var(--gold);
+    background-color: var(--white);
+    box-shadow: 0 0 0 4px rgba(201, 161, 74, 0.15);
+}
+
+.login input::placeholder {
+    color: #999;
+}
+
+/* ===== BOTÃO CRIAR CONTA ===== */
+.login button[type="submit"] {
+    width: 100%;
+    padding: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white);
+    background-color: var(--burgundy);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+.login button[type="submit"]:hover {
+    background-color: var(--burgundy-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(107, 15, 26, 0.3);
+}
+
+/* ===== LINK PARA LOGIN ===== */
+.link-login {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--gray-text);
+}
+
+.link-login a {
+    color: var(--burgundy);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.link-login a:hover {
+    color: var(--gold);
+    text-decoration: underline;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 480px) {
+    body {
+        padding: 1rem;
+    }
+
+    .login {
+        padding: 2rem 1.5rem;
+    }
+
+    .login h1 {
+        font-size: 1.75rem;
+    }
+
+    .login input[type="text"],
+    .login input[type="email"],
+    .login input[type="tel"],
+    .login input[type="password"] {
+        padding: 0.875rem 1rem;
+        font-size: 0.9rem;
+    }
+}

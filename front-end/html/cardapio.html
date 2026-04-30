@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio | Toq d'Ouro Restaurante</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/cardapio.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+              <a href="" class="logo">
+                 <img src="../public/imagens/logo.png" alt="Toq d'Ouro" class="logo-img">
+            </a>
+            
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="./index.html" class="nav-link">Início</a></li>
+                    <li><a href="./cardapio.html" class="nav-link active">Cardápio</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+            
+            <a href="#reservas" class="btn btn-primary btn-reserva">Reservar Mesa</a>
+            
+            <button class="mobile-menu-btn" aria-label="Abrir menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <ul class="mobile-nav-list">
+                <li><a href="index.html" class="mobile-nav-link">Início</a></li>
+                <li><a href="cardapio.html" class="mobile-nav-link active">Cardápio</a></li>
+                <li><a href="#sobre" class="mobile-nav-link">Sobre</a></li>
+                <li><a href="#contato" class="mobile-nav-link">Contato</a></li>
+                <li><a href="#reservas" class="btn btn-primary" style="margin-top: 1rem;">Reservar Mesa</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero do Cardápio -->
+    <section class="menu-hero">
+        <div class="menu-hero-overlay"></div>
+        <div class="container menu-hero-content">
+            <span class="menu-hero-subtitle">Sabores que Tocam</span>
+            <h1 class="menu-hero-title">Nosso Cardápio</h1>
+            <p class="menu-hero-description">Uma seleção cuidadosa de pratos preparados com ingredientes frescos e técnicas refinadas</p>
+        </div>
+    </section>
+
+    <!-- Navegação de Categorias -->
+    <nav class="category-nav">
+        <div class="container">
+            <ul class="category-nav-list">
+                <li><a href="#entradas" class="category-nav-link active">Entradas</a></li>
+                <li><a href="#pratos-principais" class="category-nav-link">Pratos Principais</a></li>
+                <li><a href="#massas" class="category-nav-link">Massas</a></li>
+                <li><a href="#sobremesas" class="category-nav-link">Sobremesas</a></li>
+                <li><a href="#bebidas" class="category-nav-link">Bebidas</a></li>
+                <li><a href="#vinhos" class="category-nav-link">Vinhos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Cardápio -->
+    <main class="menu-main">
+        <div class="container">
+            
+            <!-- Entradas -->
+            <section id="entradas" class="menu-category">
+                <div class="category-header">
+                    <span class="category-subtitle">Para Começar</span>
+                    <h2 class="category-title">Entradas</h2>
+                    <div class="category-divider"></div>
+                </div>
+                
+                <div class="menu-grid">
+                    <article class="menu-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Carpaccio de Filé Mignon</h3>
+                                <span class="menu-item-price">R$ 58,00</span>
+                            </div>
+                            <p class="menu-item-description">Finas fatias de filé mignon com rúcula, lascas de parmesão, alcaparras e molho de mostarda Dijon</p>
+                            <span class="menu-item-tag">Chef Recomenda</span>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Burrata com Tomates Confitados</h3>
+                                <span class="menu-item-price">R$ 52,00</span>
+                            </div>
+                            <p class="menu-item-description">Burrata cremosa servida com tomates cereja confitados, pesto de manjericão e crostinis</p>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Camarões ao Alho</h3>
+                                <span class="menu-item-price">R$ 68,00</span>
+                            </div>
+                            <p class="menu-item-description">Camarões salteados no azeite com alho, pimenta dedo-de-moça e ervas frescas</p>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Tartare de Salmão</h3>
+                                <span class="menu-item-price">R$ 62,00</span>
+                            </div>
+                            <p class="menu-item-description">Salmão fresco picado com abacate, cebolinha, gergelim e molho ponzu</p>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Cogumelos Recheados</h3>
+                                <span class="menu-item-price">R$ 45,00</span>
+                            </div>
+                            <p class="menu-item-description">Cogumelos portobello gratinados com cream cheese, bacon e ervas</p>
+                            <span class="menu-item-tag vegetariano">Opção Vegetariana</span>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Ceviche de Peixe Branco</h3>
+                                <span class="menu-item-price">R$ 55,00</span>
+                            </div>
+                            <p class="menu-item-description">Peixe branco marinado no limão com cebola roxa, coentro e leite de tigre</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            
+            <!-- Pratos Principais -->
+            <section id="pratos-principais" class="menu-category">
+                <div class="category-header">
+                    <span class="category-subtitle">O Melhor da Casa</span>
+                    <h2 class="category-title">Pratos Principais</h2>
+                    <div class="category-divider"></div>
+                </div>
+                
+                <div class="menu-grid">
+                    <article class="menu-item featured">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Filé Mignon ao Molho de Vinho</h3>
+                                <span class="menu-item-price">R$ 98,00</span>
+                            </div>
+                            <p class="menu-item-description">Filé mignon grelhado ao ponto, servido com molho de vinho tinto, batatas rústicas e aspargos</p>
+                            <span class="menu-item-tag">Especialidade da Casa</span>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Salmão Grelhado</h3>
+                                <span class="menu-item-price">R$ 89,00</span>
+                            </div>
+                            <p class="menu-item-description">Salmão com crosta de ervas, purê de batata doce e legumes salteados na manteiga</p>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Cordeiro Assado</h3>
+                                <span class="menu-item-price">R$ 115,00</span>
+                            </div>
+                            <p class="menu-item-description">Carré de cordeiro com crosta de ervas, risoto de menta e redução de balsâmico</p>
+                            <span class="menu-item-tag">Chef Recomenda</span>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Polvo à Lagareiro</h3>
+                                <span class="menu-item-price">R$ 125,00</span>
+                            </div>
+                            <p class="menu-item-description">Polvo grelhado com azeite, alho, batatas ao murro e pimentões assados</p>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Risoto de Funghi</h3>
+                                <span class="menu-item-price">R$ 72,00</span>
+                            </div>
+                            <p class="menu-item-description">Risoto cremoso com mix de cogumelos frescos, parmesão e trufa negra</p>
+                            <span class="menu-item-tag vegetariano">Vegetariano</span>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Pato com Laranja</h3>
+                                <span class="menu-item-price">R$ 105,00</span>
+                            </div>
+                            <p class="menu-item-description">Peito de pato confitado com molho de laranja, purê de cenoura e couve crispy</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            
+            <!-- Massas -->
+            <section id="massas" class="menu-category">
+                <div class="category-header">
+                    <span class="category-subtitle">Massas Artesanais</span>
+                    <h2 class="category-title">Massas</h2>
+                    <div class="category-divider"></div>
+                </div>
+                
+                <div class="menu-grid">
+                    <article class="menu-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Tagliatelle ao Ragù</h3>
+                                <span class="menu-item-price">R$ 68,00</span>
+                            </div>
+                            <p class="menu-item-description">Massa fresca com ragù de carne bovina cozido lentamente por 8 horas</p>
+                            <span class="menu-item-tag">Chef Recomenda</span>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Linguine ao Frutos do Mar</h3>
+                                <span class="menu-item-price">R$ 85,00</span>
+                            </div>
+                            <p class="menu-item-description">Linguine com camarões, lulas, mexilhões e vôngoles ao molho de vinho branco</p>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Gnocchi de Batata</h3>
+                                <span class="menu-item-price">R$ 62,00</span>
+                            </div>
+                            <p class="menu-item-description">Gnocchi artesanal com molho de gorgonzola, nozes caramelizadas e sálvia</p>
+                            <span class="menu-item-tag vegetariano">Vegetariano</span>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Ravioli de Lagosta</h3>
+                                <span class="menu-item-price">R$ 95,00</span>
+                            </div>
+                            <p class="menu-item-description">Ravioli recheado com lagosta, ao molho de bisque e toque de conhaque</p>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Fettuccine Alfredo</h3>
+                                <span class="menu-item-price">R$ 58,00</span>
+                            </div>
+                            <p class="menu-item-description">Fettuccine ao molho branco cremoso com parmesão e noz-moscada</p>
+                            <span class="menu-item-tag vegetariano">Vegetariano</span>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Pappardelle ao Ragu de Javali</h3>
+                                <span class="menu-item-price">R$ 78,00</span>
+                            </div>
+                            <p class="menu-item-description">Massa larga com ragu de javali selvagem, tomates San Marzano e pecorino</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            
+            <!-- Sobremesas -->
+            <section id="sobremesas" class="menu-category">
+                <div class="category-header">
+                    <span class="category-subtitle">Doce Final</span>
+                    <h2 class="category-title">Sobremesas</h2>
+                    <div class="category-divider"></div>
+                </div>
+                
+                <div class="menu-grid">
+                    <article class="menu-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Petit Gâteau</h3>
+                                <span class="menu-item-price">R$ 38,00</span>
+                            </div>
+                            <p class="menu-item-description">Bolo de chocolate com centro derretido, sorvete de baunilha e calda de frutas vermelhas</p>
+                            <span class="menu-item-tag">Mais Pedido</span>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Tiramisù</h3>
+                                <span class="menu-item-price">R$ 32,00</span>
+                            </div>
+                            <p class="menu-item-description">Clássico italiano com biscoitos champagne, café espresso e creme de mascarpone</p>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Crème Brûlée</h3>
+                                <span class="menu-item-price">R$ 34,00</span>
+                            </div>
+                            <p class="menu-item-description">Creme de baunilha com crosta caramelizada e frutas frescas da estação</p>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Panna Cotta</h3>
+                                <span class="menu-item-price">R$ 30,00</span>
+                            </div>
+                            <p class="menu-item-description">Creme italiano com coulis de maracujá e folhas de hortelã</p>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Cheesecake de Frutas Vermelhas</h3>
+                                <span class="menu-item-price">R$ 36,00</span>
+                            </div>
+                            <p class="menu-item-description">Cheesecake cremoso com base de biscoito e cobertura de frutas vermelhas</p>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Sorvetes Artesanais</h3>
+                                <span class="menu-item-price">R$ 24,00</span>
+                            </div>
+                            <p class="menu-item-description">Três bolas de sorvete artesanal - consulte os sabores do dia</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            
+            <!-- Bebidas -->
+            <section id="bebidas" class="menu-category">
+                <div class="category-header">
+                    <span class="category-subtitle">Para Acompanhar</span>
+                    <h2 class="category-title">Bebidas</h2>
+                    <div class="category-divider"></div>
+                </div>
+                
+                <div class="menu-grid menu-grid-drinks">
+                    <article class="menu-item drink-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Água Mineral</h3>
+                                <span class="menu-item-price">R$ 8,00</span>
+                            </div>
+                            <p class="menu-item-description">Com ou sem gás - 500ml</p>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-item drink-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Refrigerantes</h3>
+                                <span class="menu-item-price">R$ 10,00</span>
+                            </div>
+                            <p class="menu-item-description">Coca-Cola, Guaraná, Sprite - lata</p>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-item drink-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Suco Natural</h3>
+                                <span class="menu-item-price">R$ 14,00</span>
+                            </div>
+                            <p class="menu-item-description">Laranja, limão, maracujá, abacaxi ou manga</p>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-item drink-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Limonada Suíça</h3>
+                                <span class="menu-item-price">R$ 16,00</span>
+                            </div>
+                            <p class="menu-item-description">Limão siciliano batido com leite condensado</p>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-item drink-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Café Espresso</h3>
+                                <span class="menu-item-price">R$ 8,00</span>
+                            </div>
+                            <p class="menu-item-description">Grãos selecionados, torra média</p>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-item drink-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Cappuccino</h3>
+                                <span class="menu-item-price">R$ 14,00</span>
+                            </div>
+                            <p class="menu-item-description">Espresso com leite vaporizado e espuma cremosa</p>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-item drink-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Cerveja Artesanal</h3>
+                                <span class="menu-item-price">R$ 22,00</span>
+                            </div>
+                            <p class="menu-item-description">Consulte as opções do dia - 350ml</p>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-item drink-item">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-name">Drinks Clássicos</h3>
+                                <span class="menu-item-price">R$ 32,00</span>
+                            </div>
+                            <p class="menu-item-description">Negroni, Moscow Mule, Aperol Spritz, Gin Tônica</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            
+            <!-- Vinhos -->
+            <section id="vinhos" class="menu-category">
+                <div class="category-header">
+                    <span class="category-subtitle">Nossa Adega</span>
+                    <h2 class="category-title">Carta de Vinhos</h2>
+                    <div class="category-divider"></div>
+                </div>
+                
+                <div class="wine-sections">
+                    <!-- Vinhos Tintos -->
+                    <div class="wine-section">
+                        <h3 class="wine-section-title">Tintos</h3>
+                        
+                        <div class="menu-grid menu-grid-wines">
+                            <article class="menu-item wine-item">
+                                <div class="menu-item-content">
+                                    <div class="menu-item-header">
+                                        <h3 class="menu-item-name">Casillero del Diablo Cabernet</h3>
+                                        <span class="menu-item-price">R$ 120,00</span>
+                                    </div>
+                                    <p class="menu-item-description">Chile - Encorpado, notas de frutas negras e carvalho</p>
+                                    <span class="wine-origin">Chile</span>
+                                </div>
+                            </article>
+                            
+                            <article class="menu-item wine-item">
+                                <div class="menu-item-content">
+                                    <div class="menu-item-header">
+                                        <h3 class="menu-item-name">Catena Malbec</h3>
+                                        <span class="menu-item-price">R$ 180,00</span>
+                                    </div>
+                                    <p class="menu-item-description">Argentina - Intenso, notas de ameixa e especiarias</p>
+                                    <span class="wine-origin">Argentina</span>
+                                </div>
+                            </article>
+                            
+                            <article class="menu-item wine-item">
+                                <div class="menu-item-content">
+                                    <div class="menu-item-header">
+                                        <h3 class="menu-item-name">Chianti Classico Riserva</h3>
+                                        <span class="menu-item-price">R$ 220,00</span>
+                                    </div>
+                                    <p class="menu-item-description">Itália - Elegante, notas de cereja e tabaco</p>
+                                    <span class="wine-origin">Itália</span>
+                                </div>
+                            </article>
+                            
+                            <article class="menu-item wine-item">
+                                <div class="menu-item-content">
+                                    <div class="menu-item-header">
+                                        <h3 class="menu-item-name">Château Margaux</h3>
+                                        <span class="menu-item-price">R$ 850,00</span>
+                                    </div>
+                                    <p class="menu-item-description">França - Complexo, taninos sedosos, final prolongado</p>
+                                    <span class="wine-origin">França</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    
+                    <!-- Vinhos Brancos -->
+                    <div class="wine-section">
+                        <h3 class="wine-section-title">Brancos</h3>
+                        
+                        <div class="menu-grid menu-grid-wines">
+                            <article class="menu-item wine-item">
+                                <div class="menu-item-content">
+                                    <div class="menu-item-header">
+                                        <h3 class="menu-item-name">Cloudy Bay Sauvignon Blanc</h3>
+                                        <span class="menu-item-price">R$ 280,00</span>
+                                    </div>
+                                    <p class="menu-item-description">Nova Zelândia - Fresco, cítrico, notas tropicais</p>
+                                    <span class="wine-origin">Nova Zelândia</span>
+                                </div>
+                            </article>
+                            
+                            <article class="menu-item wine-item">
+                                <div class="menu-item-content">
+                                    <div class="menu-item-header">
+                                        <h3 class="menu-item-name">Chablis Premier Cru</h3>
+                                        <span class="menu-item-price">R$ 320,00</span>
+                                    </div>
+                                    <p class="menu-item-description">França - Mineral, elegante, notas de maçã verde</p>
+                                    <span class="wine-origin">França</span>
+                                </div>
+                            </article>
+                            
+                            <article class="menu-item wine-item">
+                                <div class="menu-item-content">
+                                    <div class="menu-item-header">
+                                        <h3 class="menu-item-name">Gavi di Gavi</h3>
+                                        <span class="menu-item-price">R$ 160,00</span>
+                                    </div>
+                                    <p class="menu-item-description">Itália - Leve, floral, perfeito para frutos do mar</p>
+                                    <span class="wine-origin">Itália</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    
+                    <!-- Espumantes -->
+                    <div class="wine-section">
+                        <h3 class="wine-section-title">Espumantes</h3>
+                        
+                        <div class="menu-grid menu-grid-wines">
+                            <article class="menu-item wine-item">
+                                <div class="menu-item-content">
+                                    <div class="menu-item-header">
+                                        <h3 class="menu-item-name">Chandon Brut</h3>
+                                        <span class="menu-item-price">R$ 140,00</span>
+                                    </div>
+                                    <p class="menu-item-description">Brasil - Fresco, perlage fina, notas de maçã</p>
+                                    <span class="wine-origin">Brasil</span>
+                                </div>
+                            </article>
+                            
+                            <article class="menu-item wine-item">
+                                <div class="menu-item-content">
+                                    <div class="menu-item-header">
+                                        <h3 class="menu-item-name">Veuve Clicquot</h3>
+                                        <span class="menu-item-price">R$ 580,00</span>
+                                    </div>
+                                    <p class="menu-item-description">França - Champagne clássico, notas de brioche e frutas</p>
+                                    <span class="wine-origin">França</span>
+                                </div>
+                            </article>
+                            
+                            <article class="menu-item wine-item">
+                                <div class="menu-item-content">
+                                    <div class="menu-item-header">
+                                        <h3 class="menu-item-name">Dom Pérignon</h3>
+                                        <span class="menu-item-price">R$ 1.800,00</span>
+                                    </div>
+                                    <p class="menu-item-description">França - Champagne premium, complexo e sofisticado</p>
+                                    <span class="wine-origin">França</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+    </main>
+
+    <!-- CTA de Reserva -->
+    <section class="menu-cta">
+        <div class="container menu-cta-content">
+            <span class="menu-cta-subtitle">Reserve Sua Mesa</span>
+            <h2 class="menu-cta-title">Venha Experimentar Nossos Sabores</h2>
+            <p class="menu-cta-description">Faça sua reserva e garanta uma experiência gastronômica inesquecível</p>
+            <a href="tel:+551199999999" class="btn btn-secondary btn-large">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                </svg>
+                (19) 9999-9999
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="index.html" class="logo footer-logo">
+                    <span class="logo-text">Toq</span>
+                    <span class="logo-accent">d'Ouro</span>
+                </a>
+                <p class="footer-tagline">Sabores que tocam a alma</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4 class="footer-title">Horário de Funcionamento</h4>
+                <ul class="footer-list">
+                    <li>Segunda a Quinta: 12h - 23h</li>
+                    <li>Sexta e Sábado: 12h - 00h</li>
+                    <li>Domingo: 12h - 22h</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4 class="footer-title">Contato</h4>
+                <ul class="footer-list">
+                    <li>
+                        <a href="tel:+551199999999">(11) 9999-9999</a>
+                    </li>
+                    <li>
+                        <a href="mailto:contato@toqdouro.com.br">contato@toqdouro.com.br</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Toq d'Ouro. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenuBtn.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Category navigation active state
+        const categoryLinks = document.querySelectorAll('.category-nav-link');
+        const sections = document.querySelectorAll('.menu-category');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            categoryLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Smooth scroll for category navigation
+        categoryLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                const navHeight = document.querySelector('.category-nav').offsetHeight + 80;
+                
+                window.scrollTo({
+                    top: targetSection.offsetTop - navHeight,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
