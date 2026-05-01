@@ -132,11 +132,6 @@ ul {
     transition: all 0.3s ease;
 }
 
-.btn-primary {
-    background-color: var(--burgundy);
-    color: var(--white);
-}
-
 .btn-primary:hover {
     background-color: var(--burgundy-dark);
     transform: translateY(-2px);
@@ -673,11 +668,7 @@ ul {
     .nav {
         display: block;
     }
-    
-    .btn-reserva {
-        display: inline-flex;
-    }
-    
+      
     .mobile-menu-btn {
         display: none;
     }

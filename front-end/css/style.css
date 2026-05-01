@@ -144,17 +144,6 @@ h1, h2, h3, h4 {
   width: 100%;
 }
 
-/* Reserve Button */
-.btn-reserve {
-  display: none;
-  padding: 0.625rem 1.5rem;
-  background-color: var(--burgundy);
-  color: var(--white);
-  font-size: 0.875rem;
-  font-weight: 500;
-  border-radius: 9999px;
-  transition: all 0.2s ease;
-}
 
 .btn-reserve:hover {
   background-color: var(--burgundy-dark);
@@ -240,10 +229,7 @@ h1, h2, h3, h4 {
   color: var(--burgundy);
 }
 
-.mobile-btn {
-  display: inline-block;
-  margin-top: 0.5rem;
-}
+
 
 /* ===== Hero Section ===== */
 .hero {
@@ -514,9 +500,7 @@ h1, h2, h3, h4 {
     display: flex;
   }
 
-  .btn-reserve {
-    display: inline-block;
-  }
+
 
   .menu-toggle {
     display: none;

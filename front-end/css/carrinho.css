@@ -1,0 +1,133 @@
+/* Fundo suave estilo restaurante */
+body {
+    font-family: Arial, sans-serif;
+    background: #f6f1ea;
+    margin: 0;
+    padding: 20px;
+}
+
+/* 🔥 Botão voltar fixo no topo */
+.btn-voltar {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1000;
+
+    display: inline-block;
+    padding: 10px 14px;
+    background-color: #C9A14A;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 14px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.btn-voltar:hover {
+    background-color: #8B1E2D;
+}
+
+/* Container do carrinho */
+.cart-container {
+    max-width: 900px;
+    margin: auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+/* Título */
+.title {
+    text-align: center;
+    color: #6B0F1A;
+    margin-bottom: 20px;
+}
+
+/* Lista de itens */
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Cada item */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #faf7f3;
+    padding: 15px;
+    border-radius: 12px;
+    border-left: 4px solid #C9A14A;
+}
+
+/* Nome e descrição */
+.item-info h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #6B0F1A;
+}
+
+.item-info p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Preço */
+.item-price {
+    font-weight: bold;
+    color: #C9A14A;
+    font-size: 16px;
+}
+
+/* Total */
+.cart-total {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Botão */
+.btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #6B0F1A;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #8B1E2D;
+}
+
+/* 🔥 RESPONSIVO (CELULAR) */
+@media (max-width: 600px) {
+
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .item-price {
+        align-self: flex-end;
+    }
+
+    .btn-voltar {
+        left: 10px;
+        right: 10px;
+        text-align: center;
+    }
+}
