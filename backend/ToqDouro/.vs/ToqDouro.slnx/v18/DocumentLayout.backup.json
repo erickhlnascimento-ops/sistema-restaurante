@@ -11,20 +11,20 @@
       "RelativeMoniker": "D:0:0:{0D85DD90-B845-4BD6-9543-11E43BC20C52}|ToqDouro\\ToqDouro.csproj|solutionrelative:toqdouro\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D85DD90-B845-4BD6-9543-11E43BC20C52}|ToqDouro\\ToqDouro.csproj|c:\\users\\igorh\\onedrive\\documents\\projetos\\toqdouro\\toqdouro\\prato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D85DD90-B845-4BD6-9543-11E43BC20C52}|ToqDouro\\ToqDouro.csproj|solutionrelative:toqdouro\\prato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0D85DD90-B845-4BD6-9543-11E43BC20C52}|ToqDouro\\ToqDouro.csproj|c:\\users\\igorh\\onedrive\\documents\\projetos\\toqdouro\\toqdouro\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D85DD90-B845-4BD6-9543-11E43BC20C52}|ToqDouro\\ToqDouro.csproj|solutionrelative:toqdouro\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0D85DD90-B845-4BD6-9543-11E43BC20C52}|ToqDouro\\ToqDouro.csproj|c:\\users\\igorh\\onedrive\\documents\\projetos\\toqdouro\\toqdouro\\cozinha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D85DD90-B845-4BD6-9543-11E43BC20C52}|ToqDouro\\ToqDouro.csproj|solutionrelative:toqdouro\\cozinha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0D85DD90-B845-4BD6-9543-11E43BC20C52}|ToqDouro\\ToqDouro.csproj|c:\\users\\igorh\\onedrive\\documents\\projetos\\toqdouro\\toqdouro\\mesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0D85DD90-B845-4BD6-9543-11E43BC20C52}|ToqDouro\\ToqDouro.csproj|solutionrelative:toqdouro\\mesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D85DD90-B845-4BD6-9543-11E43BC20C52}|ToqDouro\\ToqDouro.csproj|c:\\users\\igorh\\onedrive\\documents\\projetos\\toqdouro\\toqdouro\\cozinha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D85DD90-B845-4BD6-9543-11E43BC20C52}|ToqDouro\\ToqDouro.csproj|solutionrelative:toqdouro\\cozinha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0D85DD90-B845-4BD6-9543-11E43BC20C52}|ToqDouro\\ToqDouro.csproj|c:\\users\\igorh\\onedrive\\documents\\projetos\\toqdouro\\toqdouro\\prato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D85DD90-B845-4BD6-9543-11E43BC20C52}|ToqDouro\\ToqDouro.csproj|solutionrelative:toqdouro\\prato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D85DD90-B845-4BD6-9543-11E43BC20C52}|ToqDouro\\ToqDouro.csproj|c:\\users\\igorh\\onedrive\\documents\\projetos\\toqdouro\\toqdouro\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D85DD90-B845-4BD6-9543-11E43BC20C52}|ToqDouro\\ToqDouro.csproj|solutionrelative:toqdouro\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -51,26 +51,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Mesa.cs",
               "DocumentMoniker": "C:\\Users\\igorh\\OneDrive\\Documents\\Projetos\\ToqDouro\\ToqDouro\\Mesa.cs",
               "RelativeDocumentMoniker": "ToqDouro\\Mesa.cs",
               "ToolTip": "C:\\Users\\igorh\\OneDrive\\Documents\\Projetos\\ToqDouro\\ToqDouro\\Mesa.cs",
               "RelativeToolTip": "ToqDouro\\Mesa.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-30T22:26:06.501Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "Cozinha.cs",
               "DocumentMoniker": "C:\\Users\\igorh\\OneDrive\\Documents\\Projetos\\ToqDouro\\ToqDouro\\Cozinha.cs",
               "RelativeDocumentMoniker": "ToqDouro\\Cozinha.cs",
               "ToolTip": "C:\\Users\\igorh\\OneDrive\\Documents\\Projetos\\ToqDouro\\ToqDouro\\Cozinha.cs",
               "RelativeToolTip": "ToqDouro\\Cozinha.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAswC8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-30T22:25:47.064Z",
               "EditorCaption": ""
@@ -90,26 +90,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Users\\igorh\\OneDrive\\Documents\\Projetos\\ToqDouro\\ToqDouro\\Cliente.cs",
               "RelativeDocumentMoniker": "ToqDouro\\Cliente.cs",
               "ToolTip": "C:\\Users\\igorh\\OneDrive\\Documents\\Projetos\\ToqDouro\\ToqDouro\\Cliente.cs",
               "RelativeToolTip": "ToqDouro\\Cliente.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAzwBAAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-30T22:24:31.572Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Prato.cs",
               "DocumentMoniker": "C:\\Users\\igorh\\OneDrive\\Documents\\Projetos\\ToqDouro\\ToqDouro\\Prato.cs",
               "RelativeDocumentMoniker": "ToqDouro\\Prato.cs",
               "ToolTip": "C:\\Users\\igorh\\OneDrive\\Documents\\Projetos\\ToqDouro\\ToqDouro\\Prato.cs",
               "RelativeToolTip": "ToqDouro\\Prato.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAADwvxAAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-30T22:21:24.399Z",
               "EditorCaption": ""
