@@ -1,0 +1,7 @@
+C:\Users\igorh\OneDrive\Documents\Projetos\ToqDouro\ToqDouro\obj\Debug\ToqDouro.csproj.AssemblyReference.cache
+C:\Users\igorh\OneDrive\Documents\Projetos\ToqDouro\ToqDouro\obj\Debug\ToqDouro.csproj.CoreCompileInputs.cache
+C:\Users\igorh\OneDrive\Documents\Projetos\ToqDouro\ToqDouro\bin\Debug\ToqDouro.exe.config
+C:\Users\igorh\OneDrive\Documents\Projetos\ToqDouro\ToqDouro\bin\Debug\ToqDouro.exe
+C:\Users\igorh\OneDrive\Documents\Projetos\ToqDouro\ToqDouro\bin\Debug\ToqDouro.pdb
+C:\Users\igorh\OneDrive\Documents\Projetos\ToqDouro\ToqDouro\obj\Debug\ToqDouro.exe
+C:\Users\igorh\OneDrive\Documents\Projetos\ToqDouro\ToqDouro\obj\Debug\ToqDouro.pdb
