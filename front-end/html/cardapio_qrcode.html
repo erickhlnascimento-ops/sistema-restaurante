@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toq d'Ouro - Cardápio Digital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/front-end/css/cardapio_qrcode.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <div class="header-left">
+        <div class="logo">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+            <path d="M2 17l10 5 10-5"/>
+            <path d="M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <div class="brand">
+          <h1 class="brand-name">Toq d'Ouro</h1>
+          <p class="brand-tagline">Gastronomia de Excelência</p>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="customer-info">
+          <span class="customer-name">João Silva</span>
+          <span class="table-number">Mesa 5</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main">
+    <!-- Categories Navigation -->
+    <nav class="categories">
+      <div class="categories-container">
+        <button class="category-btn active" data-category="all">Todos</button>
+        <button class="category-btn" data-category="entrada">Entradas</button>
+        <button class="category-btn" data-category="principal">Pratos Principais</button>
+        <button class="category-btn" data-category="pizza">Pizzas</button>
+        <button class="category-btn" data-category="sobremesa">Sobremesas</button>
+        <button class="category-btn" data-category="bebida">Bebidas</button>
+        <button class="category-btn" data-category="vinho">Vinhos</button>
+      </div>
+    </nav>
+
+    <!-- Content Area -->
+    <div class="content-wrapper">
+      <!-- Menu Items Grid -->
+      <section class="menu-section">
+        <h2 class="section-title">Cardápio</h2>
+        
+        <div class="menu-grid">
+          <!-- Entrada 1 -->
+          <article class="menu-card" data-category="entrada">
+            <div class="card-image">
+              <img src="/front-end/public/imagens/carpaccio.jpg" alt="Carpaccio de Carne">
+              <span class="badge popular">Popular</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header">
+                <h3 class="card-title">Carpaccio de Carne</h3>
+                <span class="card-price">R$ 42,00</span>
+              </div>
+              <p class="card-description">Finas fatias de carne crua com rúcula, alcaparras e lascas de parmesão</p>
+              <div class="card-footer">
+                <span class="prep-time">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 6v6l4 2"/>
+                  </svg>
+                  15 min
+                </span>
+                <button class="add-btn" data-item="carpaccio">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 8v8M8 12h8"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Entrada 2 -->
+          <article class="menu-card" data-category="entrada">
+            <div class="card-image">
+              <img src="/front-end/public/imagens/bruschetta.jpg" alt="Bruschetta Italiana">
+            </div>
+            <div class="card-content">
+              <div class="card-header">
+                <h3 class="card-title">Bruschetta Italiana</h3>
+                <span class="card-price">R$ 28,00</span>
+              </div>
+              <p class="card-description">Tomates frescos, manjericão, azeite e mussarela de búfala sobre pão tostado</p>
+              <div class="card-footer">
+                <span class="prep-time">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 6v6l4 2"/>
+                  </svg>
+                  10 min
+                </span>
+                <button class="add-btn" data-item="bruschetta">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 8v8M8 12h8"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Entrada 3 -->
+          <article class="menu-card" data-category="entrada">
+            <div class="card-image">
+              <img src="/front-end/public/imagens/camarao-alho.jpg" alt="Camarão ao Alho">
+              <span class="badge popular">Popular</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header">
+                <h3 class="card-title">Camarão ao Alho</h3>
+                <span class="card-price">R$ 58,00</span>
+              </div>
+              <p class="card-description">Camarões salteados em azeite com alho dourado e ervas finas</p>
+              <div class="card-footer">
+                <span class="prep-time">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 6v6l4 2"/>
+                  </svg>
+                  20 min
+                </span>
+                <button class="add-btn" data-item="camarao-alho">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 8v8M8 12h8"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Prato Principal 1 -->
+          <article class="menu-card" data-category="principal">
+            <div class="card-image">
+              <img src="/front-end/public/imagens/file-mignon.jpg" alt="Filé Mignon ao Molho Madeira">
+              <span class="badge popular">Popular</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header">
+                <h3 class="card-title">Filé Mignon ao Molho Madeira</h3>
+                <span class="card-price">R$ 89,00</span>
+              </div>
+              <p class="card-description">Filé mignon grelhado com molho madeira, batatas gratinadas e legumes salteados</p>
+              <div class="card-footer">
+                <span class="prep-time">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 6v6l4 2"/>
+                  </svg>
+                  35 min
+                </span>
+                <button class="add-btn" data-item="file-mignon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 8v8M8 12h8"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Prato Principal 2 -->
+          <article class="menu-card" data-category="principal">
+            <div class="card-image">
+              <img src="/front-end/public/imagens/salmao.jpg" alt="Salmão Grelhado">
+            </div>
+            <div class="card-content">
+              <div class="card-header">
+                <h3 class="card-title">Salmão Grelhado</h3>
+                <span class="card-price">R$ 78,00</span>
+              </div>
+              <p class="card-description">Filé de salmão grelhado com manteiga de ervas e risoto de limão siciliano</p>
+              <div class="card-footer">
+                <span class="prep-time">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 6v6l4 2"/>
+                  </svg>
+                  30 min
+                </span>
+                <button class="add-btn" data-item="salmao">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 8v8M8 12h8"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Prato Principal 3 -->
+          <article class="menu-card" data-category="principal">
+            <div class="card-image">
+              <img src="/front-end/public/imagens/risoto-camarao.jpg" alt="Risoto de Camarão">
+              <span class="badge popular">Popular</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header">
+                <h3 class="card-title">Risoto de Camarão</h3>
+                <span class="card-price">R$ 72,00</span>
+              </div>
+              <p class="card-description">Risoto cremoso com camarões flambados, tomate cereja e manjericão fresco</p>
+              <div class="card-footer">
+                <span class="prep-time">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 6v6l4 2"/>
+                  </svg>
+                  40 min
+                </span>
+                <button class="add-btn" data-item="risoto-camarao">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 8v8M8 12h8"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Prato Principal 4 -->
+          <article class="menu-card" data-category="principal">
+            <div class="card-image">
+              <img src="/front-end/public/imagens/picanha.jpg" alt="Picanha na Brasa">
+            </div>
+            <div class="card-content">
+              <div class="card-header">
+                <h3 class="card-title">Picanha na Brasa</h3>
+                <span class="card-price">R$ 95,00</span>
+              </div>
+              <p class="card-description">Picanha grelhada no ponto, acompanhada de farofa especial e vinagrete</p>
+              <div class="card-footer">
+                <span class="prep-time">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 6v6l4 2"/>
+                  </svg>
+                  45 min
+                </span>
+                <button class="add-btn" data-item="picanha">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 8v8M8 12h8"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Pizza 1 -->
+          <article class="menu-card" data-category="pizza">
+            <div class="card-image">
+              <img src="/front-end/public/imagens/pizza-margherita.jpg" alt="Pizza Margherita">
+              <span class="badge popular">Popular</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header">
+                <h3 class="card-title">Pizza Margherita</h3>
+                <span class="card-price">R$ 52,00</span>
+              </div>
+              <p class="card-description">Molho de tomate San Marzano, mussarela de búfala fresca e manjericão</p>
+              <div class="card-footer">
+                <span class="prep-time">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 6v6l4 2"/>
+                  </svg>
+                  25 min
+                </span>
+                <button class="add-btn" data-item="pizza-margherita">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 8v8M8 12h8"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Pizza 2 -->
+          <article class="menu-card" data-category="pizza">
+            <div class="card-image">
+              <img src="/front-end/public/imagens/pizza-4-queijos.jpg" alt="Pizza Quattro Formaggi">
+            </div>
+            <div class="card-content">
+              <div class="card-header">
+                <h3 class="card-title">Pizza Quattro Formaggi</h3>
+                <span class="card-price">R$ 62,00</span>
+              </div>
+              <p class="card-description">Mussarela, gorgonzola, parmesão e provolone com mel trufado</p>
+              <div class="card-footer">
+                <span class="prep-time">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 6v6l4 2"/>
+                  </svg>
+                  25 min
+                </span>
+                <button class="add-btn" data-item="pizza-4-queijos">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 8v8M8 12h8"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Pizza 3 -->
+          <article class="menu-card" data-category="pizza">
+            <div class="card-image">
+              <img src="/front-end/public/imagens/pizza-parma.jpg" alt="Pizza Parma">
+            </div>
+            <div class="card-content">
+              <div class="card-header">
+                <h3 class="card-title">Pizza Parma</h3>
+                <span class="card-price">R$ 68,00</span>
+              </div>
+              <p class="card-description">Presunto de Parma, rúcula fresca e lascas de parmesão</p>
+              <div class="card-footer">
+                <span class="prep-time">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 6v6l4 2"/>
+                  </svg>
+                  25 min
+                </span>
+                <button class="add-btn" data-item="pizza-parma">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 8v8M8 12h8"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Sobremesa 1 -->
+          <article class="menu-card" data-category="sobremesa">
+            <div class="card-image">
+              <img src="/front-end/public/imagens/petit-gateau.jpg" alt="Petit Gâteau">
+              <span class="badge popular">Popular</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header">
+                <h3 class="card-title">Petit Gâteau</h3>
+                <span class="card-price">R$ 32,00</span>
+              </div>
+              <p class="card-description">Bolo de chocolate com centro derretido, acompanhado de sorvete de baunilha</p>
+              <div class="card-footer">
+                <span class="prep-time">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 6v6l4 2"/>
+                  </svg>
+                  15 min
+                </span>
+                <button class="add-btn" data-item="petit-gateau">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 8v8M8 12h8"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Sobremesa 2 -->
+          <article class="menu-card" data-category="sobremesa">
+            <div class="card-image">
+              <img src="images/tiramisu.jpg" alt="Tiramisù">
+            </div>
+            <div class="card-content">
+              <div class="card-header">
+                <h3 class="card-title">Tiramisù</h3>
+                <span class="card-price">R$ 28,00</span>
+              </div>
+              <p class="card-description">Clássico italiano com camadas de mascarpone, café espresso e cacau</p>
+              <div class="card-footer">
+                <span class="prep-time">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 6v6l4 2"/>
+                  </svg>
+                  5 min
+                </span>
+                <button class="add-btn" data-item="tiramisu">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 8v8M8 12h8"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Sobremesa 3 -->
+          <article class="menu-card" data-category="sobremesa">
+            <div class="card-image">
+              <img src="images/cheesecake.jpg" alt="Cheesecake de Frutas Vermelhas">
+            </div>
+            <div class="card-content">
+              <div class="card-header">
+                <h3 class="card-title">Cheesecake de Frutas Vermelhas</h3>
+                <span class="card-price">R$ 26,00</span>
+              </div>
+              <p class="card-description">Cheesecake cremoso com calda de frutas vermelhas frescas</p>
+              <div class="card-footer">
+                <span class="prep-time">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 6v6l4 2"/>
+                  </svg>
+                  5 min
+                </span>
+                <button class="add-btn" data-item="cheesecake">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 8v8M8 12h8"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bebida 1 -->
+          <article class="menu-card" data-category="bebida">
+            <div class="card-image">
+              <img src="images/suco.jpg" alt="Suco Natural">
+            </div>
+            <div class="card-content">
+              <div class="card-header">
+                <h3 class="card-title">Suco Natural</h3>
+                <span class="card-price">R$ 12,00</span>
+              </div>
+              <p class="card-description">Suco natural de laranja, limão, maracujá ou abacaxi</p>
+              <div class="card-footer">
+                <span class="prep-time">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 6v6l4 2"/>
+                  </svg>
+                  5 min
+                </span>
+                <button class="add-btn" data-item="suco">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 8v8M8 12h8"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bebida 2 -->
+          <article class="menu-card" data-category="bebida">
+            <div class="card-image">
+              <img src="images/agua.jpg" alt="Água Mineral">
+            </div>
+            <div class="card-content">
+              <div class="card-header">
+                <h3 class="card-title">Água Mineral</h3>
+                <span class="card-price">R$ 6,00</span>
+              </div>
+              <p class="card-description">Água mineral sem gás ou com gás (500ml)</p>
+              <div class="card-footer">
+                <span class="prep-time">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 6v6l4 2"/>
+                  </svg>
+                  1 min
+                </span>
+                <button class="add-btn" data-item="agua">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 8v8M8 12h8"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bebida 3 -->
+          <article class="menu-card" data-category="bebida">
+            <div class="card-image">
+              <img src="images/refrigerante.jpg" alt="Refrigerante">
+            </div>
+            <div class="card-content">
+              <div class="card-header">
+                <h3 class="card-title">Refrigerante</h3>
+                <span class="card-price">R$ 8,00</span>
+              </div>
+              <p class="card-description">Coca-Cola, Guaraná ou Sprite (lata 350ml)</p>
+              <div class="card-footer">
+                <span class="prep-time">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 6v6l4 2"/>
+                  </svg>
+                  1 min
+                </span>
+                <button class="add-btn" data-item="refrigerante">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 8v8M8 12h8"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bebida 4 -->
+          <article class="menu-card" data-category="bebida">
+            <div class="card-image">
+              <img src="images/caipirinha.jpg" alt="Caipirinha">
+              <span class="badge popular">Popular</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header">
+                <h3 class="card-title">Caipirinha</h3>
+                <span class="card-price">R$ 22,00</span>
+              </div>
+              <p class="card-description">Caipirinha tradicional de limão ou frutas da estação</p>
+              <div class="card-footer">
+                <span class="prep-time">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 6v6l4 2"/>
+                  </svg>
+                  5 min
+                </span>
+                <button class="add-btn" data-item="caipirinha">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 8v8M8 12h8"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Vinho 1 -->
+          <article class="menu-card" data-category="vinho">
+            <div class="card-image">
+              <img src="images/vinho-tinto.jpg" alt="Vinho Tinto Malbec">
+              <span class="badge popular">Popular</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header">
+                <h3 class="card-title">Vinho Tinto Malbec</h3>
+                <span class="card-price">R$ 120,00</span>
+              </div>
+              <p class="card-description">Vinho argentino encorpado com notas de frutas negras (garrafa 750ml)</p>
+              <div class="card-footer">
+                <span class="prep-time">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 6v6l4 2"/>
+                  </svg>
+                  5 min
+                </span>
+                <button class="add-btn" data-item="vinho-tinto">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 8v8M8 12h8"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Vinho 2 -->
+          <article class="menu-card" data-category="vinho">
+            <div class="card-image">
+              <img src="images/vinho-branco.jpg" alt="Vinho Branco Chardonnay">
+            </div>
+            <div class="card-content">
+              <div class="card-header">
+                <h3 class="card-title">Vinho Branco Chardonnay</h3>
+                <span class="card-price">R$ 95,00</span>
+              </div>
+              <p class="card-description">Vinho chileno fresco e frutado, ideal para frutos do mar (garrafa 750ml)</p>
+              <div class="card-footer">
+               
+                <button class="add-btn" data-item="vinho-branco">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 8v8M8 12h8"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Vinho 3 -->
+          <article class="menu-card" data-category="vinho">
+            <div class="card-image">
+              <img src="images/espumante.jpg" alt="Espumante Brut">
+            </div>
+            <div class="card-content">
+              <div class="card-header">
+                <h3 class="card-title">Espumante Brut</h3>
+                <span class="card-price">R$ 85,00</span>
+              </div>
+              <p class="card-description">Espumante brasileiro seco e refrescante, perfeito para celebrações (garrafa 750ml)</p>
+              <div class="card-footer">
+                <span class="prep-time">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 6v6l4 2"/>
+                  </svg>
+                  5 min
+                </span>
+                <button class="add-btn" data-item="espumante">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 8v8M8 12h8"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Cart Sidebar (Desktop) -->
+      <aside class="cart-sidebar">
+        <div class="cart-header">
+          <h2 class="cart-title">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="9" cy="21" r="1"/>
+              <circle cx="20" cy="21" r="1"/>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+            </svg>
+            Seu Pedido
+          </h2>
+          <span class="cart-count">0 itens</span>
+        </div>
+        
+        <div class="cart-items" id="cart-items">
+          <div class="cart-empty">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="9" cy="21" r="1"/>
+              <circle cx="20" cy="21" r="1"/>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+            </svg>
+            <p>Seu carrinho está vazio</p>
+            <span>Adicione itens do cardápio</span>
+          </div>
+        </div>
+
+        <div class="cart-footer">
+          <div class="cart-subtotal">
+            <span>Subtotal</span>
+            <span id="cart-subtotal">R$ 0,00</span>
+          </div>
+          <div class="cart-total">
+            <span>Total</span>
+            <span id="cart-total">R$ 0,00</span>
+          </div>
+          <button class="checkout-btn" id="checkout-btn" disabled>
+            Enviar Pedido
+          </button>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Mobile Cart Button -->
+  <button class="mobile-cart-btn" id="mobile-cart-btn">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="9" cy="21" r="1"/>
+      <circle cx="20" cy="21" r="1"/>
+      <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+    </svg>
+    <span class="cart-badge" id="mobile-cart-badge">0</span>
+  </button>
+
+  <!-- Mobile Cart Sheet -->
+  <div class="cart-sheet-overlay" id="cart-sheet-overlay"></div>
+  <div class="cart-sheet" id="cart-sheet">
+    <div class="cart-sheet-header">
+      <h2>Seu Pedido</h2>
+      <button class="close-sheet-btn" id="close-sheet-btn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 6L6 18M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+    <div class="cart-sheet-items" id="cart-sheet-items">
+      <div class="cart-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="9" cy="21" r="1"/>
+          <circle cx="20" cy="21" r="1"/>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+        </svg>
+        <p>Seu carrinho está vazio</p>
+        <span>Adicione itens do cardápio</span>
+      </div>
+    </div>
+    <div class="cart-sheet-footer">
+      <div class="cart-subtotal">
+        <span>Subtotal</span>
+        <span id="cart-sheet-subtotal">R$ 0,00</span>
+      </div>
+      <div class="cart-total">
+        <span>Total</span>
+        <span id="cart-sheet-total">R$ 0,00</span>
+      </div>
+      <button class="checkout-btn" id="checkout-sheet-btn" disabled>
+        Enviar Pedido
+      </button>
+    </div>
+  </div>
+
+  <!-- Observation Modal -->
+  <div class="modal-overlay" id="observation-modal">
+    <div class="modal">
+      <div class="modal-header">
+        <h3>Adicionar Observação</h3>
+        <button class="modal-close" id="modal-close">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 6L6 18M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-item-name" id="modal-item-name">Item</p>
+        <div class="observation-suggestions">
+          <button class="suggestion-btn" data-obs="Sem cebola">Sem cebola</button>
+          <button class="suggestion-btn" data-obs="Sem alho">Sem alho</button>
+          <button class="suggestion-btn" data-obs="Bem passado">Bem passado</button>
+          <button class="suggestion-btn" data-obs="Mal passado">Mal passado</button>
+          <button class="suggestion-btn" data-obs="Sem pimenta">Sem pimenta</button>
+          <button class="suggestion-btn" data-obs="Extra queijo">Extra queijo</button>
+        </div>
+        <textarea class="observation-input" id="observation-input" placeholder="Digite sua observação..."></textarea>
+      </div>
+      <div class="modal-footer">
+        <button class="modal-btn secondary" id="modal-cancel">Cancelar</button>
+        <button class="modal-btn primary" id="modal-confirm">Adicionar ao Pedido</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Success Modal -->
+  <div class="modal-overlay" id="success-modal">
+    <div class="modal success-modal">
+      <div class="success-icon">
+        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+          <polyline points="22,4 12,14.01 9,11.01"/>
+        </svg>
+      </div>
+      <h3>Pedido Enviado!</h3>
+      <p>Seu pedido foi enviado com sucesso para a cozinha.</p>
+      <p class="success-detail">Tempo estimado: <strong>25-35 minutos</strong></p>
+      <button class="modal-btn primary" id="success-close">Continuar</button>
+    </div>
+  </div>
+
+  <script src="/front-end/JavaScript/cardapio_qrcode.js"></script>
+</body>
+</html>
