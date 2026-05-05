@@ -1,48 +1,52 @@
-<!DOCTYPE html> 
-<html lang="pt-br"> 
+<!DOCTYPE html>
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8"> <!-- Permite acentuação -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade -->
     <title>Login</title> <!-- Título da aba -->
-    <link rel="stylesheet" href="../css/login.css"> 
+    <link rel="stylesheet" href="../css/login.css">
 </head>
+
 <body>
+    <main>
+        <!-- Container principal da tela de login -->
+        <div class="login">
+            <h1>Login</h1>
 
-    <!-- Container principal da tela de login -->
-    <div class="login">
-        <h1>Login</h1>
+            <!-- Formulário de login -->
+            <form>
+                <!-- Campo para número de telefone -->
+                <input type="tel" placeholder="Número de telefone" required>
 
-        <!-- Formulário de login -->
-        <form>
-            <!-- Campo para número de telefone -->
-            <input type="tel" placeholder="Número de telefone" required>
+                <!-- Campo para senha -->
+                <input type="password" placeholder="Senha" required>
 
-            <!-- Campo para senha -->
-            <input type="password" placeholder="Senha" required>
+                <!-- Links auxiliares -->
+                <div class="links">
+                    <!-- Link para recuperar senha -->
+                    <a href="./esquecer.html">Esqueceu a senha?</a>
 
-            <!-- Links auxiliares -->
-            <div class="links">
-                <!-- Link para recuperar senha -->
-                <a href="./esquecer.html">Esqueceu a senha?</a>
+                    <!-- Link para cadastro -->
+                    <a href="./cadastro.html">Registre-se</a>
+                </div>
 
-                <!-- Link para cadastro -->
-                <a href="./cadastro.html">Registre-se</a>
-            </div>
+                <!-- Botão para enviar o formulário -->
+                <button type="submit">Entrar</button>
+            </form>
 
-            <!-- Botão para enviar o formulário -->
-            <button type="submit">Entrar</button>
-        </form>
+            <!-- Texto separador -->
+            <p class="ou">ou</p>
 
-        <!-- Texto separador -->
-        <p class="ou">ou</p>
-
-        <!-- Botão de login com Google -->
-        <button class="google-btn">
-            <!-- Ícone do Google -->
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg">
-            Entrar com Google
-        </button>
-    </div>
+            <!-- Botão de login com Google -->
+            <button class="google-btn">
+                <!-- Ícone do Google -->
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg">
+                Entrar com Google
+            </button>
+        </div>
+    </main>
 
 </body>
+
 </html>

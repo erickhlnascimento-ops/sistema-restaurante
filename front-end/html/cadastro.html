@@ -7,41 +7,42 @@
     <title>Cadastro</title>
     <link rel="stylesheet" href="../css/cadastro.css">
 </head>
+
 <body>
+    <main>
+        <!-- Container principal da tela de cadastro -->
+        <div class="login">
 
-    <!-- Container principal da tela de cadastro -->
-    <div class="login">
+            <h1>Cadastre-se</h1>
+            <form>
+                <!-- Formulário de cadastro de usuário -->
 
-        <h1>Cadastre-se</h1>
-        <form>
-            <!-- Formulário de cadastro de usuário -->
+                <input type="text" placeholder="Nome completo" required>
+                <!-- Campo para nome completo do usuário -->
 
-            <input type="text" placeholder="Nome completo" required>
-            <!-- Campo para nome completo do usuário -->
+                <input type="email" placeholder="Email" required>
+                <!-- Campo para e-mail do usuário -->
 
-            <input type="email" placeholder="Email" required>
-            <!-- Campo para e-mail do usuário -->
+                <input type="tel" placeholder="Número de telefone" required>
+                <!-- Campo para número de telefone -->
 
-            <input type="tel" placeholder="Número de telefone" required>
-            <!-- Campo para número de telefone -->
+                <input type="password" placeholder="Senha" required>
+                <!-- Campo para senha -->
 
-            <input type="password" placeholder="Senha" required>
-            <!-- Campo para senha -->
+                <input type="password" placeholder="Confirmar senha" required>
+                <!-- Campo para confirmação da senha -->
 
-            <input type="password" placeholder="Confirmar senha" required>
-            <!-- Campo para confirmação da senha -->
+                <button type="submit">Criar conta</button>
+                <!-- Botão para enviar o formulário e criar a conta -->
+            </form>
 
-            <button type="submit">Criar conta</button>
-            <!-- Botão para enviar o formulário e criar a conta -->
-        </form>
+            <p class="link-login">
+                <!-- Link para usuários que já possuem conta -->
+                Já tem conta? <a href="./login.html">Entrar</a>
+            </p>
 
-        <p class="link-login">
-            <!-- Link para usuários que já possuem conta -->
-            Já tem conta? <a href="./login.html">Entrar</a>
-        </p>
-
-    </div>
-
+        </div>
+    </main>
 </body>
 
 </html>

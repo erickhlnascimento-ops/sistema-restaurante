@@ -337,21 +337,8 @@ button {
 
 .card-footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-}
-
-.prep-time {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-xs);
-  font-size: 0.75rem;
-  color: var(--color-text-light);
-}
-
-.prep-time svg {
-  width: 16px;
-  height: 16px;
 }
 
 .add-btn {
