@@ -46,7 +46,6 @@
     <Compile Include="Cliente.cs" />
     <Compile Include="Cozinha.cs" />
     <Compile Include="Exibicao.cs" />
-    <Compile Include="Mesa.cs" />
     <Compile Include="Pedido.cs" />
     <Compile Include="Prato.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

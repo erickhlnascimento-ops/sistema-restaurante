@@ -10,14 +10,15 @@ namespace ToqDouro
     {
         public Cliente Cliente { get; set; }
         public Prato Prato { get; set; }
-
         public string Status { get; set; }
+        public int NumeroMesa { get; set; }
 
+        // Construtor que aceita cliente e prato (corrige chamada new Pedido(this, prato))
         public Pedido(Cliente cliente, Prato prato)
         {
             Cliente = cliente;
             Prato = prato;
-            Status = "Enviado para cozinha";
+            Status = "Pendente";
         }
     }
 }
